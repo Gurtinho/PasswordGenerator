@@ -1,7 +1,7 @@
 import { generator } from './generator.js';
 
 const inputs = {
-    displayPassword: document.querySelector('.show-password div'),
+    displayPassword: document.querySelector('.numbers-password'),
     passwordButton: document.querySelector('.div-button'),
     passwordChar: document.querySelector('.password-char input'),
     passwordNumber: document.querySelector('.password-numbers input'),
@@ -11,7 +11,7 @@ const inputs = {
 };
 
 function password() {
-    inputs.passwordButton.addEventListener('click', () => {
+    inputs.passwordButton.onclick = () => {
         inputs.displayPassword.innerHTML = generator(
             inputs.passwordChar.value,
             inputs.passwordUpper.checked,
@@ -19,6 +19,6 @@ function password() {
             inputs.passwordNumber.checked,
             inputs.passwordSymbols.checked
         );
-    });
+    };
 };
 export { password };
