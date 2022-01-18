@@ -3,7 +3,7 @@ const clipboard = () => {
     const clip = document.querySelector('.show-password section span');
  
     clip.onclick = async () => {
-        if (display.innerHTML == '') return false;
+        if (display.innerHTML == '' || display.innerHTML == 'Adicione caracteres' ) return false;
         const numbersDisplay = display.innerHTML;
         await navigator.clipboard.writeText(numbersDisplay);
         await navigator.clipboard.readText();
@@ -17,7 +17,7 @@ const clipboard = () => {
         display.nextElementSibling.append(div);
         setTimeout(() => {
             div.remove();
-        }, 3000);
+        }, 2000);
     };
 };
 export { clipboard };

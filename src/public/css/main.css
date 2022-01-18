@@ -49,6 +49,9 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 90%;
+
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
 }
 
 .show-password section span {
@@ -60,9 +63,11 @@ body {
     color: white;
     background-color: rgb(49, 236, 149);
 
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
+    font-size: 18px;
+    margin-right: 2%;
     border-radius: 5px;
     cursor: pointer;
     transition: all 300ms;
@@ -91,6 +96,8 @@ body {
     border-radius: 5px;
     color: white;
     background-color: rgb(49, 236, 149);
+
+    transition: all 300ms;
 }
 
 .div-copied::after {
@@ -121,11 +128,46 @@ body {
     background-color: rgb(243, 243, 243);
 }
 
+.password-char {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.password-char div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+.password-char div input {
+    margin-left: 5%;
+    margin-right: 1%;
+    cursor: pointer;
+
+    outline: 0;
+    border-radius: 5px;
+    color: rgb(49, 236, 149);
+}
+
+.password-char div label {
+    font-weight: bold;
+    color: rgb(49, 236, 149);
+}
+
 .password-options {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 90%;
     margin-top: 3%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .password-options div {
@@ -133,15 +175,17 @@ body {
     flex-direction: row;
     align-items: center;
     margin-top: 4%;
-    width: 350px;
+    margin-left: 8%;
+    width: 100%;
 }
 
 .password-options div input {
     margin-right: 2%;
     cursor: pointer;
-    color: rgb(49, 236, 149);
-    font-weight: bold;
-    outline: 0;
+}
+
+.password-options div:last-child {
+    margin-bottom: 4%;
 }
 
 .div-button {

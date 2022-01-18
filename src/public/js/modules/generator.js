@@ -10,7 +10,6 @@ const generator = (quantity, upper, lower, numbers, symbols) => {
     quantity = Number(quantity);
     const arrayPassword = [];
     if (quantity == '') return `Adicione caracteres`;
-    if (quantity < 0) return `Número negativo? Sério?`;
 
     for (let i = 0; i < quantity; i++) {
         if (upper) arrayPassword.push(uppercaseGenerator());

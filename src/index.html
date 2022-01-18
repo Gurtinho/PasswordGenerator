@@ -21,11 +21,24 @@
             </section>
         </section>
 
-        <section class="password-options">
-            <div class="password-char">
-                <input type="number" min="6" max="20" value="6">
-                <p>Caracteres</p>
+        <section class="password-char">
+            <div>
+                <input type="radio" name="char" value="6" checked>
+                <label>6</label>
+                <input type="radio" name="char" value="8">
+                <label>8</label>
+                <input type="radio" name="char" value="12">
+                <label>12</label>
+                <input type="radio" name="char" value="16">
+                <label>16</label>
+                <input type="radio" name="char" value="20">
+                <label>20</label>
+                <input type="radio" name="char" value="24">
+                <label>24</label>
             </div>
+        </section>
+
+        <section class="password-options">
             <div class="password-numbers">
                 <input type="checkbox" name="numbers" checked>
                 <p>Números</p>
