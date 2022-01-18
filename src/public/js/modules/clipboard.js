@@ -1,0 +1,4 @@
+const clipboard = () => {
+    
+};
+export { clipboard };
