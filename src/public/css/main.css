@@ -21,7 +21,7 @@ body {
 
     margin-top: 5%;
 
-    width: 40%;
+    width: 50%;
     height: auto;
 
     border-radius: 5px;
@@ -180,37 +180,41 @@ body {
 
 .password-options {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     width: 90%;
     margin-top: 3%;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.password-options div {
+.password-options label {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 4%;
-    margin-left: 8%;
-    width: 100%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    height: 30px;
+    width: auto;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: rgb(49, 236, 149);
 }
 
-.password-options div input {
+.password-options label input {
     margin-right: 2%;
     cursor: pointer;
+    display: none;
 }
 
-.password-options div:last-child {
-    margin-bottom: 4%;
+.password-options label p {
+    color: white;
+    font-weight: bold;
 }
 
 .div-button {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
+    margin: 5%;
 }
 
 .div-button button {
@@ -218,8 +222,6 @@ body {
     font-weight: bold;
     color: white;
     padding: 2%;
-
-    margin: 5%;
 
     width: 100%;
     border: none;
