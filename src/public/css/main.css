@@ -136,27 +136,46 @@ body {
     margin-top: 3%;
 }
 
-.password-char div {
+.password-char section {
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    justify-content: space-between;
     width: 90%;
 }
 
-.password-char div input {
+.password-char section label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: rgb(49, 236, 149);
+    transition: all 300ms;
+}
+
+.active {
+    background-color: rgb(15, 160, 92) !important;
+}
+
+.password-char section label:hover {
+    background-color: rgb(35, 214, 131);
+}
+
+.password-char section label input {
     margin-left: 5%;
     margin-right: 1%;
     cursor: pointer;
-
-    outline: 0;
-    border-radius: 5px;
-    color: rgb(49, 236, 149);
+    display: none;
 }
 
-.password-char div label {
+.password-char section label p {
+    margin-left: 5px;
     font-weight: bold;
-    color: rgb(49, 236, 149);
+    color: white;
 }
 
 .password-options {
@@ -192,7 +211,6 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 4%;
 }
 
 .div-button button {

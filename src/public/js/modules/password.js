@@ -3,7 +3,7 @@ import { generator } from './generator.js';
 const inputs = {
     displayPassword: document.querySelector('.numbers-password'),
     passwordButton: document.querySelector('.div-button'),
-    passwordChar: document.querySelectorAll('.password-char div input'),
+    passwordChar: document.querySelectorAll('.password-char label input'),
     passwordNumber: document.querySelector('.password-numbers input'),
     passwordUpper: document.querySelector('.password-upper input'),
     passwordLower: document.querySelector('.password-lower input'),
